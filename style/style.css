@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
+
+body {
+    width: 360px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #FFF;
+    background-color: #F15156;
+}
+
+.page {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #E44449;
+    height: 80px;
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav button {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    border: none;
+    border-radius: 8.33px;
+
+}
+
+#menu {
+    display: flex;
+    opacity: 0;
+    height: 170px;
+    border-radius: 0 0 20px 20px;
+    background-color: #E44449;
+    position: absolute;
+    top: 80px;
+    width: 360px;
+    padding-bottom: 28px;
+    transition: opacity 0.2s ease;
+    
+}
+
+.line {
+    position: absolute;
+    width: 311px;
+    height: 0;
+    border: 1px solid #FFF;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0.2;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    
+    padding: 0 20px;
+    
+}
+#menu ul li {
+    list-style: none;
+
+
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #FFF;
+    opacity: 0.5;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    
+}
+#menu ul li a:hover {
+    font-weight: 700;
+    opacity: 1;
+}
+
+.openMenu {
+    opacity: 1 !important;
+    z-index: 10;
+}
+
+
+main {
+    background-color: #F15156;
+    padding: 52px 0 0 21px;
+}
+
+#avatars img {
+    position: absolute;
+}
+
+#avatars img:nth-child(1){
+    left: 20px;
+}
+
+#avatars img:nth-child(2) {
+    left: 38px;
+}
+
+#avatars img:nth-child(3) {
+    left: 56px;
+}
+
+#avatars img:nth-child(4) {
+    left: 73px;
+}
+
+#texts {
+    position: relative;
+    top: 35px;
+    font-size: 14px;
+}
+
+#texts span {
+    font-weight: 700;
+}
+
+#texts h1 {
+    width: 268px;
+    height: 144px;
+    font-size: 44px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.hero {
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    width: 850px;
+    margin: auto;
+    position: relative;
+    left: -265px;
+    gap: 20px;
+}
+
+.container div {
+    width: 279px;
+    height: 255px;
+    background: linear-gradient(180deg, #F36A6F 17.23%, #E44449 73.77%);
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container div button{
+    position: absolute;
+    width: 240px;
+    height: 55px;
+
+    background-color: #FFF;
+    border-radius: 9px;
+    border: none;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #0D3B66;
+}
