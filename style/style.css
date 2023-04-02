@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
 
+
 body {
     width: 360px;
     margin: 0;
     padding: 0;
+    background-color: #F15156;
     font-family: 'Nunito', sans-serif;
     color: #FFF;
-    background-color: #F15156;
 }
 
-.page {
+.page1 {
     margin: 0;
     padding: 0;
 }
@@ -24,11 +25,7 @@ nav {
     justify-content: space-between;
 }
 
-#logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
+
 
 nav a {
     text-decoration: none;
@@ -37,7 +34,6 @@ nav a {
 nav button {
     width: 2.5rem;
     height: 2.5rem;
-
     border: none;
     border-radius: 8.33px;
 
@@ -54,7 +50,11 @@ nav button {
     width: 360px;
     padding-bottom: 28px;
     transition: opacity 0.2s ease;
-    
+}
+
+.openMenu {
+    opacity: 1 !important;
+    z-index: 10;
 }
 
 .line {
@@ -81,8 +81,6 @@ nav button {
 }
 #menu ul li {
     list-style: none;
-
-
 }
 
 #menu ul li a {
@@ -92,17 +90,14 @@ nav button {
     font-size: 18px;
     line-height: 110%;
     letter-spacing: -0.02em;
-    
 }
+
 #menu ul li a:hover {
     font-weight: 700;
     opacity: 1;
 }
 
-.openMenu {
-    opacity: 1 !important;
-    z-index: 10;
-}
+
 
 
 main {
@@ -149,6 +144,10 @@ main {
     text-align: left;
 }
 
+#texts p:nth-child(3) {
+    display: none;
+}
+
 .hero {
     margin-top: 100px;
 }
@@ -162,7 +161,7 @@ main {
     gap: 20px;
 }
 
-.container div {
+.item {
     width: 279px;
     height: 255px;
     background: linear-gradient(180deg, #F36A6F 17.23%, #E44449 73.77%);
@@ -172,7 +171,11 @@ main {
     justify-content: center;
 }
 
-.container div button{
+.item:nth-child(1) img{
+    visibility: hidden;
+}
+
+.item button{
     position: absolute;
     width: 240px;
     height: 55px;
@@ -186,4 +189,259 @@ main {
     font-size: 14px;
     line-height: 15px;
     color: #0D3B66;
+}
+
+@media screen and (min-width: 360px) {
+
+    body {
+        width: 1440px;
+        min-height: 100vh;
+        margin-left: 112px;
+    }
+
+    nav {
+        margin: 80px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F15156;
+    }
+
+    #logo {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    #logo img {
+        transform: scale(1.5);
+    }
+
+    #burguer-menu{
+        width: 4.5rem;
+        height: 4.5rem;
+
+        border: none;
+        border-radius: 15px;
+        margin-right: 610px;
+        z-index: 10;
+
+        cursor: pointer;
+    }
+
+    #burguer-menu img {
+        transform: scale(1.5);
+    }
+
+    main { 
+        display: flex;
+    }
+
+    #section-1 {
+        flex: 1;
+        
+        display: flex;
+    }
+
+    #avatars img {
+        transform: scale(1.2);
+    }
+
+    #avatars img:nth-child(1){
+        left: 132px;
+    }
+    
+    #avatars img:nth-child(2) {
+        left: 160px;
+    }
+    
+    #avatars img:nth-child(3) {
+        left: 188px;
+    }
+    
+    #avatars img:nth-child(4) {
+        left: 215px;
+    }
+
+    #texts {
+        width: 500px;
+
+    }
+
+    #texts p { 
+        position: absolute;
+        left: 128px;
+        top: -43px;
+        
+        font-size: 1rem;
+    }
+
+    #texts h1 {
+        margin-top: 80px;
+        width: 450px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 72px;
+        font-weight: 700;
+    }
+
+    .break {
+        display: none;
+    }
+
+    #texts p:nth-child(3) {
+        display: block;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34px;
+
+        position: relative;
+        left: 0;
+        top: 100px
+    }
+
+    .hero { 
+        flex: 2;
+        justify-content: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 541px 152px 712px;
+        height: 100vh;
+        
+        width: 1200px;
+        height: 1445px;
+        gap: 20px;
+        
+        position: absolute;
+        left: 800px;
+        top: 40px;
+        
+    }
+
+    .item {
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 592px;
+        text-align: center;
+
+        background: #E44449;
+    }
+
+    .item:nth-child(1) {
+        height: 100%;
+        grid-row: 1;
+        background: linear-gradient(180deg, #F36A6F 17.23%, #E44449 73.77%);
+    }
+
+    .item:nth-child(1) img {
+        margin-bottom: 11px;
+        visibility: visible;
+    }
+
+    .item:nth-child(2) {
+        height: 152px;
+        grid-row: 2;
+    }
+
+    .item:nth-child(2) img {
+        display: none;
+    }
+
+    .item button {
+        border-radius: 20px;
+        width: 492px;
+        height: 72px;
+        margin: 0;
+
+        font-size: 20px;
+        line-height: 34px;
+        color: #0D3B66;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 800;
+    }
+
+    .item button:hover{
+        cursor: pointer;
+    }
+
+    .item:nth-child(3) {
+        height: 10%;
+        grid-row: 3 / span 1;
+        border-radius: 20px 20px 0 0 ;
+    }
+
+    .item:nth-child(4) { 
+        grid-row: 1 / span 2;
+        grid-column: 2;
+        height: 100%;
+        width: 15%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .item:nth-child(5) {
+        height: 10%;
+        width: 15%;
+        border-radius: 20px 0 0 0 ;
+    }
+
+
+
+    /* Menu*/
+    #menu {
+        display: flex;
+        opacity: 0;
+        width: 591px;
+        height: 513px;
+        border-radius: 20px;
+
+        position: absolute;
+        top: 40px;
+        left: 800px;
+        transition: opacity 0.2s ease;
+        z-index: 9;
+    }
+
+    .line {
+        display: none;
+    }
+
+
+
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 16px;
+        
+        padding: 0 50px;
+        
+    }
+    #menu ul li {
+        list-style: none;
+    }
+
+    #menu ul li a {
+        text-decoration: none;
+        color: #FFF;
+        opacity: 0.5;
+        font-size: 36px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+    }
+
+    #menu ul li a:hover {
+        font-weight: 700;
+        opacity: 1;
+    }
+
+
+
 }
