@@ -2,13 +2,14 @@
 
 
 body {
-    width: 360px;
+    width: 400px;
     height: 820px;
     margin: 0;
     padding: 0;
     background-color: #F15156;
     font-family: 'Nunito', sans-serif;
     color: #FFF;
+    overflow: hidden;
 }
 
 .page1 {
