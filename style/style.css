@@ -2,7 +2,7 @@
 
 
 body {
-    width: 400px;
+    width: 360px;
     height: 820px;
     margin: 0;
     padding: 0;
@@ -162,7 +162,7 @@ main {
 
 .container {
     display: flex;
-    width: 645px;
+    width: 603px;
     margin: auto;
     position: relative;
     left: -265px;
