@@ -207,7 +207,7 @@ main {
     display: none;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 400px) {
 
     body {
         width: 1440px;
