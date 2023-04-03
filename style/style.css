@@ -162,7 +162,7 @@ main {
 
 .container {
     display: flex;
-    width: 850px;
+    width: 645px;
     margin: auto;
     position: relative;
     left: -265px;
@@ -197,6 +197,14 @@ main {
     font-size: 14px;
     line-height: 15px;
     color: #0D3B66;
+}
+
+.item:nth-child(3) {
+    border-radius: 20px 0 0 20px;
+}
+
+.item:nth-child(4), .item:nth-child(5) {
+    display: none;
 }
 
 @media screen and (min-width: 400px) {
@@ -384,6 +392,10 @@ main {
         height: 10%;
         grid-row: 3 / span 1;
         border-radius: 20px 20px 0 0 ;
+    }
+
+    .item:nth-child(4), .item:nth-child(5) {
+        display: flex;
     }
 
     .item:nth-child(4) { 
