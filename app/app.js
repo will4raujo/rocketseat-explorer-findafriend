@@ -6,9 +6,6 @@ const imageCancelMenu = document.createElement('img');
 imageCancelMenu.src = "images/Vector.svg";
 imageCancelMenu.id = "imageCancelMenu";
 
-console.log(imageBurguerMenu, imageCancelMenu)
-
-
 burgerMenu.addEventListener('click', () => {
     menu.classList.toggle('openMenu');
     
